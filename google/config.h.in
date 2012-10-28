@@ -27,7 +27,7 @@
 #define HAVE_FCNTL_H @LOCAL_HAS_FCNTL_HEADER@
 
 /* Define to 1 if you have the `ftruncate' function. */
-#define HAVE_FTRUNCATE 1
+#define HAVE_FTRUNCATE @LOCAL_HAS_FTRUNCATE_FUNC@
 
 /* define if the compiler has hash_map */
 #define HAVE_HASH_MAP 1
@@ -45,13 +45,13 @@
 #define HAVE_MEMORY_H @LOCAL_HAS_MEMORY_HEADER@
 
 /* Define to 1 if you have the `memset' function. */
-#define HAVE_MEMSET 1
+#define HAVE_MEMSET @LOCAL_HAS_MEMSET_FUNC@
 
 /* Define to 1 if you have the `mkdir' function. */
-#define HAVE_MKDIR 1
+#define HAVE_MKDIR @LOCAL_HAS_MKDIR_FUNC@
 
 /* Define if you have POSIX threads libraries and header files. */
-#define HAVE_PTHREAD 1
+#define HAVE_PTHREAD @LOCAL_HAS_PTHREAD_LIBRARY@
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H @LOCAL_HAS_STDINT_HEADER@
@@ -60,10 +60,10 @@
 #define HAVE_STDLIB_H @LOCAL_HAS_STDLIB_HEADER@
 
 /* Define to 1 if you have the `strchr' function. */
-#define HAVE_STRCHR 1
+#define HAVE_STRCHR @LOCAL_HAS_STRCHR_FUNC@
 
 /* Define to 1 if you have the `strerror' function. */
-#define HAVE_STRERROR 1
+#define HAVE_STRERROR @LOCAL_HAS_STRERROR_FUNC@
 
 /* Define to 1 if you have the <strings.h> header file. */
 #define HAVE_STRINGS_H @LOCAL_HAS_STRINGS_HEADER@
@@ -72,7 +72,7 @@
 #define HAVE_STRING_H @LOCAL_HAS_STRING_HEADER@
 
 /* Define to 1 if you have the `strtol' function. */
-#define HAVE_STRTOL 1
+#define HAVE_STRTOL @LOCAL_HAS_STRTOL_FUNC@
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H @LOCAL_HAS_SYS_STAT_HEADER@
