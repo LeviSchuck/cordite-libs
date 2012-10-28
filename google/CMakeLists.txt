@@ -1,0 +1,38 @@
+include_directories(${CMAKE_CURRENT_BIRNARY_DIR})
+
+INCLUDE (${CMAKE_ROOT}/Modules/CheckIncludeFile.cmake)
+macro (CORE_CHECK_INCLUDE_FILE header var prefix)
+     CHECK_INCLUDE_FILE("${header}"        ${prefix}_${var} )
+endmacro()
+
+CORE_CHECK_INCLUDE_FILE("dlfcn.h" HAS_DLFCN_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("fcntl.h" HAS_FCNTL_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("inttypes.h" HAS_INTTYPES_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("limits.h" HAS_LIMIT_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("memory.h" HAS_MEMORY_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("stdint.h" HAS_STDINT_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("stdlib.h" HAS_STDLIB_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("strings.h" HAS_STRINGS_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("string.h" HAS_STRING_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("sys/stat.h" HAS_SYS_STAT_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("sys/types.h" HAS_SYS_TYPES_HEADER LOCAL)
+CORE_CHECK_INCLUDE_FILE("unistd.h" HAS_UNISTD_HEADER LOCAL)
+
+if(USE_CXX_11)
+set(LOCAL_HASH_MAP_CLASS "unordered_map")
+set(LOCAL_HASH_MAP_HEADER_LOC "<unordered_map>")
+set(LOCAL_HASH_MAP_NAMESPACE "std")
+set(LOCAL_HASH_SET_CLASS "unordered_set")
+set(LOCAL_HASH_SET_HEADER "<unordered_set>")
+else()
+set(LOCAL_HASH_MAP_CLASS "unordered_map")
+set(LOCAL_HASH_MAP_HEADER_LOC "<tr1/unordered_map>")
+set(LOCAL_HASH_MAP_NAMESPACE "std::tr1")
+set(LOCAL_HASH_SET_CLASS "unordered_set")
+set(LOCAL_HASH_SET_HEADER "<tr1/unordered_set>")
+endif()
+
+configure_file(config.h.in config.h)
+
+
+add_subdirectory(protobuf)

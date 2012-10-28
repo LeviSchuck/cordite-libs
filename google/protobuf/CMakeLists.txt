@@ -1,0 +1,73 @@
+set(PB_H	
+	io/coded_stream.h
+	io/coded_stream_inl.h
+	stubs/common.h
+	descriptor.h
+	descriptor.pb.h
+	descriptor_database.h
+	dynamic_message.h
+	extension_set.h
+	generated_message_reflection.h
+	generated_message_util.h
+	io/gzip_stream.h
+	stubs/hash.h
+	compiler/importer.h
+	stubs/map-util.h
+	message.h
+	message_lite.h
+	stubs/once.h
+	compiler/parser.h
+	io/printer.h
+	reflection_ops.h
+	repeated_field.h
+	service.h
+	stubs/stl_util-inl.h
+	stubs/strutil.h
+	stubs/substitute.h
+	text_format.h
+	io/tokenizer.h
+	unknown_field_set.h
+	wire_format.h
+	wire_format_lite.h
+	wire_format_lite_inl.h
+	io/zero_copy_stream.h
+	io/zero_copy_stream_impl.h
+	io/zero_copy_stream_impl_lite.h
+)
+set(PB_S
+	io/coded_stream.cc
+	stubs/common.cc
+	descriptor.cc
+	descriptor.pb.cc
+	descriptor_database.cc
+	dynamic_message.cc
+	extension_set.cc
+	extension_set_heavy.cc
+	generated_message_reflection.cc
+	generated_message_util.cc
+	io/gzip_stream.cc
+	compiler/importer.cc
+	message.cc
+	message_lite.cc
+	stubs/once.cc
+	compiler/parser.cc
+	io/printer.cc
+	reflection_ops.cc
+	repeated_field.cc
+	service.cc
+	stubs/structurally_valid.cc
+	stubs/strutil.cc
+	stubs/substitute.cc
+	text_format.cc
+	io/tokenizer.cc
+	unknown_field_set.cc
+	wire_format.cc
+	wire_format_lite.cc
+	io/zero_copy_stream.cc
+	io/zero_copy_stream_impl.cc
+	io/zero_copy_stream_impl_lite.cc
+)
+include_directories(../../ ${CMAKE_CURRENT_BINARY_DIR}/../)
+add_library(cordite-protobuf SHARED ${PB_S} ${PB_H})
+target_link_libraries(cordite-protobuf z)
+add_subdirectory(compiler)

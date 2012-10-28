@@ -1,0 +1,8 @@
+The contents of Google Protocol Buffers are under the New BSD 3 Clause License.
+
+Minimal changes have been made to the original source code, 
+which may be found by searching for CORDITE_CHANGE
+
+The CMake files and such are considered public domain within this directory
+and subdirectories.
+
