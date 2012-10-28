@@ -68,6 +68,6 @@ set(PB_S
 	io/zero_copy_stream_impl_lite.cc
 )
 include_directories(../../ ${CMAKE_CURRENT_BINARY_DIR}/../)
-add_library(cordite-protobuf SHARED ${PB_S} ${PB_H})
+add_library(cordite-protobuf ${LIB_TYPE} ${PB_S} ${PB_H})
 target_link_libraries(cordite-protobuf z)
 add_subdirectory(compiler)
