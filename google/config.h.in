@@ -21,13 +21,13 @@
 //<tr1/unordered_set>
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#define HAVE_DLFCN_H @LOCAL_HAS_DLFCN_HEADER@
+@COMMENT_HAS_DLFCN_HEADER@ #define HAVE_DLFCN_H @LOCAL_HAS_DLFCN_HEADER@
 
 /* Define to 1 if you have the <fcntl.h> header file. */
-#define HAVE_FCNTL_H @LOCAL_HAS_FCNTL_HEADER@
+@COMMENT_HAS_FCNTL_HEADER@ #define HAVE_FCNTL_H @LOCAL_HAS_FCNTL_HEADER@
 
 /* Define to 1 if you have the `ftruncate' function. */
-#define HAVE_FTRUNCATE @LOCAL_HAS_FTRUNCATE_FUNC@
+@COMMENT_HAS_FTRUNCATE_FUNC@ #define HAVE_FTRUNCATE @LOCAL_HAS_FTRUNCATE_FUNC@
 
 /* define if the compiler has hash_map */
 #define HAVE_HASH_MAP 1
@@ -36,52 +36,52 @@
 #define HAVE_HASH_SET 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-#define HAVE_INTTYPES_H @LOCAL_HAS_INTTYPES_HEADER@
+@COMMENT_HAS_INTTYPES_HEADER@ #define HAVE_INTTYPES_H @LOCAL_HAS_INTTYPES_HEADER@
 
 /* Define to 1 if you have the <limits.h> header file. */
-#define HAVE_LIMITS_H @LOCAL_HAS_LIMITS_HEADER@
+@COMMENT_HAS_LIMITS_HEADER@ #define HAVE_LIMITS_H @LOCAL_HAS_LIMITS_HEADER@
 
 /* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H @LOCAL_HAS_MEMORY_HEADER@
+@COMMENT_HAS_MEMORY_HEADER@ #define HAVE_MEMORY_H @LOCAL_HAS_MEMORY_HEADER@
 
 /* Define to 1 if you have the `memset' function. */
-#define HAVE_MEMSET @LOCAL_HAS_MEMSET_FUNC@
+@COMMENT_HAS_MEMSET_FUNC@ #define HAVE_MEMSET @LOCAL_HAS_MEMSET_FUNC@
 
 /* Define to 1 if you have the `mkdir' function. */
-#define HAVE_MKDIR @LOCAL_HAS_MKDIR_FUNC@
+@COMMENT_HAS_MKDIR_FUNC@ #define HAVE_MKDIR @LOCAL_HAS_MKDIR_FUNC@
 
 /* Define if you have POSIX threads libraries and header files. */
-#define HAVE_PTHREAD @LOCAL_HAS_PTHREAD_LIBRARY@
+@COMMENT_HAS_PTHREAD_LIBRARY@ #define HAVE_PTHREAD @LOCAL_HAS_PTHREAD_LIBRARY@
 
 /* Define to 1 if you have the <stdint.h> header file. */
-#define HAVE_STDINT_H @LOCAL_HAS_STDINT_HEADER@
+@COMMENT_HAS_STDINT_HEADER@ #define HAVE_STDINT_H @LOCAL_HAS_STDINT_HEADER@
 
 /* Define to 1 if you have the <stdlib.h> header file. */
-#define HAVE_STDLIB_H @LOCAL_HAS_STDLIB_HEADER@
+@COMMENT_HAS_STDLIB_HEADER@ #define HAVE_STDLIB_H @LOCAL_HAS_STDLIB_HEADER@
 
 /* Define to 1 if you have the `strchr' function. */
-#define HAVE_STRCHR @LOCAL_HAS_STRCHR_FUNC@
+@COMMENT_HAS_STRCHR_FUNC@ #define HAVE_STRCHR @LOCAL_HAS_STRCHR_FUNC@
 
 /* Define to 1 if you have the `strerror' function. */
-#define HAVE_STRERROR @LOCAL_HAS_STRERROR_FUNC@
+@COMMENT_HAS_STRERROR_FUNC@ #define HAVE_STRERROR @LOCAL_HAS_STRERROR_FUNC@
 
 /* Define to 1 if you have the <strings.h> header file. */
-#define HAVE_STRINGS_H @LOCAL_HAS_STRINGS_HEADER@
+@COMMENT_HAS_STRINGS_HEADER@ #define HAVE_STRINGS_H @LOCAL_HAS_STRINGS_HEADER@
 
 /* Define to 1 if you have the <string.h> header file. */
-#define HAVE_STRING_H @LOCAL_HAS_STRING_HEADER@
+@COMMENT_HAS_STRING_HEADER@ #define HAVE_STRING_H @LOCAL_HAS_STRING_HEADER@
 
 /* Define to 1 if you have the `strtol' function. */
-#define HAVE_STRTOL @LOCAL_HAS_STRTOL_FUNC@
+@COMMENT_HAS_STRTOL_FUNC@ #define HAVE_STRTOL @LOCAL_HAS_STRTOL_FUNC@
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
-#define HAVE_SYS_STAT_H @LOCAL_HAS_SYS_STAT_HEADER@
+@COMMENT_HAS_SYS_STAT_HEADER@ #define HAVE_SYS_STAT_H @LOCAL_HAS_SYS_STAT_HEADER@
 
 /* Define to 1 if you have the <sys/types.h> header file. */
-#define HAVE_SYS_TYPES_H @LOCAL_HAS_SYS_TYPES_HEADER@
+@COMMENT_HAS_SYS_TYPES_HEADER@ #define HAVE_SYS_TYPES_H @LOCAL_HAS_SYS_TYPES_HEADER@
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#define HAVE_UNISTD_H @LOCAL_HAS_UNISTD_HEADER@
+@COMMENT_HAS_UNISTD_HEADER@ #define HAVE_UNISTD_H @LOCAL_HAS_UNISTD_HEADER@
 
 /* Enable classes using zlib compression. */
 #define HAVE_ZLIB 1

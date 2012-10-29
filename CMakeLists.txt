@@ -37,3 +37,5 @@ endif(USE_CXX_11)
 
 add_subdirectory(google)
 add_subdirectory(bson)
+#add_subdirectory(poco)
+add_subdirectory(zmq)

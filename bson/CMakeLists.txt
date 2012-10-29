@@ -53,10 +53,10 @@ set(BSON_SOURCE
         lib/nonce.cpp
 )
 
-add_library(bsoncpp ${LIB_TYPE} ${BSON_SOURCE} ${BSON_HEADERS})
+add_library(cordite-bsoncpp ${LIB_TYPE} ${BSON_SOURCE} ${BSON_HEADERS})
 
 
-install(TARGETS bsoncpp
+install(TARGETS cordite-bsoncpp
 	LIBRARY DESTINATION lib
 	ARCHIVE DESTINATION lib)
 install(DIRECTORY inc/ DESTINATION include/bson
