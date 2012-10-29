@@ -1,29 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 project(bson-cpp)
-if (APPLE)
-	set(CMAKE_XCODE_ATTRIBUTE_GCC_VERSION "com.apple.compilers.llvm.clang.1_0")
-	set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LANGUAGE_STANDARD "c++11")
-	set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LIBRARY "libc++")
-	
-	#these have absolutely no effect :(
-	if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_GNUCC)
-		message(FATAL_ERROR "You need to use clang on Apple!
-		use CC=clang CXX=clang++ cmake path/to/project")
-	endif()
-	#SET(CMAKE_C_COMPILER "clang")
-	#SET(CMAKE_CXX_COMPILER "clang++")
-	
-	SET(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
-endif ()
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
-if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_GNUCC)
-  set ( CMAKE_CXX_FLAGS "-std=c++0x")
-  #set ( CMAKE_CXX_FLAGS_DEBUG "")
-  #set ( CMAKE_CXX_FLAGS_RELEASE  "" )
-endif ()
+
 set(BSON_HEADERS
 	inc/bson-inl.h
 	inc/bson.h
