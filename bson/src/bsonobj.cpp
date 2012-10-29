@@ -773,7 +773,7 @@ namespace bson {
     }
 
     //BSONObj staticNull = fromjson( "{'':null}" );
-    BSONObj staticNull = BSONObjBuilder().appendNull("").obj();
+    BSONObj staticNull = BSONObjBuilder().appendNull("").done();
 
     /* well ordered compare */
     int BSONObj::woSortOrder(const BSONObj& other, const BSONObj& sortKey ,
